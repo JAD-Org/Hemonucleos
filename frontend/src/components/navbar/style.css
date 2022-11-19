@@ -1,0 +1,17 @@
+nav {
+    font-size: 24px;
+    padding-block: 1em;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu > li {
+    margin-inline: 1.5em;
+}
+
+.nav-menu a:hover {
+    border-bottom: solid 4px #E01C40;
+}
