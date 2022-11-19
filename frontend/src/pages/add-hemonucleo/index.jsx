@@ -1,5 +1,12 @@
 import React from 'react'
+import { Navbar, MapContent } from '../../components/index.js'
+
 
 export function AddHemonucleo() {
-  return <div>AddHemonucleo</div>
+  return (
+    <div>
+      <Navbar />
+      <MapContent />
+    </div>
+  )
 }
