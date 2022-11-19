@@ -1,0 +1,8 @@
+#root {
+    min-height: 100vh;
+    background-image:
+        url(./imgs/bg-decoration-top.svg),
+        url(./imgs/bg-decoration-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+}
