@@ -1,5 +1,11 @@
 import React from 'react'
+import { ListMain, Navbar } from '../../components/index'
 
 export function ListAllHemonucleos() {
-  return <div>ListAllHemonucleos</div>
+  return (
+    <div>
+      <Navbar />
+      <ListMain />
+    </div>
+  )
 }

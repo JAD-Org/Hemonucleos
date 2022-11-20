@@ -1,0 +1,11 @@
+.list-item {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-block: .75em;
+}
+
+.list-item::before {
+    content: url(../../imgs/list-decoration.svg);
+    margin-right: .5em;
+}

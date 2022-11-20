@@ -3,7 +3,7 @@ import './style.css'
 
 export function Navbar() {
   return (
-    <nav>
+    <nav className="global-nav">
       <ul className="nav-menu">
         <li>
           <a href="/" title="Ir para home">Home</a>
