@@ -1,17 +1,18 @@
-nav {
+.global-nav {
     font-size: 24px;
     padding-block: 1em;
+    margin-bottom: 3em;
 }
 
-.nav-menu {
+.global-nav ul {
     display: flex;
     justify-content: center;
 }
 
-.nav-menu > li {
+.global-nav li {
     margin-inline: 1.5em;
 }
 
-.nav-menu a:hover {
+.global-nav a:hover {
     border-bottom: solid 4px #E01C40;
 }

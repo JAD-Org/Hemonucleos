@@ -1,26 +1,25 @@
-main {
+.home-main {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    margin-block: 96px;
 }
 
-section {
+.home-main section {
     text-align: center;
 }
 
-h1 {
+.home-main h1 {
     font-size: 96px;
     margin: 0 1em .5em;
 }
 
-p {
+.home-main p {
     width: 300px;
     margin: 0 auto 2.5em;
 }
 
-.goto-list {
+.home-main a {
     display: block;
     width: 15em;
     color: #EDEDED;
@@ -30,7 +29,7 @@ p {
     margin: 0 auto;
 }
 
-.picture {
+.home-main img {
     width: 549px;
     height: 583px;
 }
