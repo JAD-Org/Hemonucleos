@@ -1,18 +1,25 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './style.css'
 
 export function Navbar() {
   return (
-    <nav className="global-nav">
-      <ul className="nav-menu">
+    <nav className='global-nav'>
+      <ul className='nav-menu'>
         <li>
-          <a href="/" title="Ir para home">Home</a>
+          <Link to='/' title='Ir para home'>
+            Home
+          </Link>
         </li>
         <li>
-          <a href="/list_all" title="Ir para lista de hemonúcleos">Hemos List</a>
+          <Link to='/list_all' title='Ir para lista de hemonúcleos'>
+            Hemos List
+          </Link>
         </li>
         <li>
-          <a href="/add" title="Ir para o mapa">Hemos Map</a>
+          <Link to='/add' title='Ir para o mapa'>
+            Hemos Map
+          </Link>
         </li>
       </ul>
     </nav>
