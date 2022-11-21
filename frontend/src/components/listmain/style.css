@@ -27,6 +27,7 @@
 }
 
 .list-main ul {
+    width: 400px;
     height: calc(100% - 150px);
 }
 
