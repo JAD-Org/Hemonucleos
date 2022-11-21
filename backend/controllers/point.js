@@ -23,7 +23,15 @@ const addPoint = async (req, res) => {
 
 const listAllPoints = async (_, res) => {
   const hemonucleos = await Point.findAll()
-  res.status(200).json(hemonucleos)
+
+  const newHemonucleos = hemonucleos.map(hemonucleo => ({
+    id: hemonucleo.id,
+    name: hemonucleo.name,
+    lat: hemonucleo.geometry.coordinates[0],
+    lng: hemonucleo.geometry.coordinates[1],
+  }))
+
+  res.status(200).json(newHemonucleos)
 }
 
 const syncronize = async (_, res) => {

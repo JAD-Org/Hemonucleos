@@ -4,6 +4,7 @@ import arrow from '../../imgs/arrow-icon.png'
 import { Pin } from '..'
 
 export function MapAdd({ allHemonucleos }) {
+  console.log(allHemonucleos)
   return (
     <main className='main-map'>
       <div className='container-map'>
@@ -15,7 +16,7 @@ export function MapAdd({ allHemonucleos }) {
         <div className='div-map-image'>
           <GoogleMapReact
             bootstrapURLKeys={{
-              key: ''
+              key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
             }}
             defaultCenter={{
               lat: -6.8896525,
@@ -27,6 +28,7 @@ export function MapAdd({ allHemonucleos }) {
             {allHemonucleos.map(hemonucleo => {
               return (
                 <Pin
+                  key={hemonucleo.id}
                   lat={hemonucleo.lat}
                   lng={hemonucleo.lng}
                   name={hemonucleo.name}
