@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './style.css'
 
 export function Navbar() {
@@ -7,19 +7,19 @@ export function Navbar() {
     <nav className='global-nav'>
       <ul className='nav-menu'>
         <li>
-          <Link to='/' title='Ir para home'>
+          <NavLink activeClassName='active' to='/' title='Ir para home'>
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to='/list_all' title='Ir para lista de hemonúcleos'>
+          <NavLink activeClassName='active' to='/list_all' title='Ir para lista de hemonúcleos'>
             Hemos List
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to='/add' title='Ir para o mapa'>
+          <NavLink activeClassName='active' to='/add' title='Ir para o mapa'>
             Hemos Map
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>

@@ -1,7 +1,7 @@
 .global-nav {
     font-size: 24px;
     padding-block: 1em;
-    margin-bottom: 3em;
+    margin-bottom: 5em;
 }
 
 .global-nav ul {
@@ -11,6 +11,10 @@
 
 .global-nav li {
     margin-inline: 1.5em;
+}
+
+.global-nav .active {
+    border-bottom: solid 4px #E01C40;
 }
 
 .global-nav a:hover {
