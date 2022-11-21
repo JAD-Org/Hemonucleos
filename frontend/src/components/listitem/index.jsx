@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 import './style.css'
 
 export function ListItem(props) {
-    return (
-        <li className="list-item">
-            <a href="/add">{props.text}</a>
-        </li>
-    )
+  return (
+    <li className='list-item' onClick={() => props.setSelectedData(props.data)}>
+      {props.data.name}
+    </li>
+  )
 }

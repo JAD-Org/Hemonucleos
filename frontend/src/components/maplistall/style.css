@@ -9,10 +9,11 @@
 
 /* Container do Conteudo da Página */
 .container-map {
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .input-search {
@@ -32,16 +33,10 @@
 }
 
 .div-map-image {
+  width: 900px;
+  height: 400px;
   border: 6px solid #e01c40;
   border-radius: 1rem;
-
-  margin: 0 auto;
-  padding: 0;
-}
-
-.exemplo-map-image {
-  width: 900px;
-  height: auto;
 }
 
 /* Footer */

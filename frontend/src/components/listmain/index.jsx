@@ -5,9 +5,9 @@ import { List, ListItem } from '../../components/index'
 import picture from '../../imgs/list-pic.svg'
 import './style.css'
 
-export function ListMain({ allHemonucleos }) {
+export function ListMain({ allHemonucleos, setSelectedData }) {
   const input = useRef(null)
-  const [ search, setSearch ] = useState('')
+  const [search, setSearch] = useState('')
 
   const handleSearch = e => {
     e.preventDefault()
@@ -27,11 +27,17 @@ export function ListMain({ allHemonucleos }) {
           />
         </form>
         <List>
-          {allHemonucleos.filter (
-            hemo => hemo.name.toLowerCase().includes(search.toLowerCase())
-          ).map(hemonucleo => (
-            <ListItem key={hemonucleo.id} text={hemonucleo.name} />
-          ))}
+          {allHemonucleos
+            .filter(hemo =>
+              hemo.name.toLowerCase().includes(search.toLowerCase())
+            )
+            .map(hemonucleo => (
+              <ListItem
+                key={hemonucleo.id}
+                data={hemonucleo}
+                setSelectedData={data => setSelectedData(data)}
+              />
+            ))}
         </List>
       </section>
       <section className='img-section'>
