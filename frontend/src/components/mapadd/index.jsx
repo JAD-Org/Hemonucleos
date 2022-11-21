@@ -4,8 +4,15 @@ import arrow from '../../imgs/arrow-icon.png'
 import { Pin } from '..'
 import './style.css'
 
-export function MapAdd({ allHemonucleos }) {
-  console.log(allHemonucleos)
+export function MapAdd({
+  allHemonucleos,
+  coords,
+  name,
+  setCoords,
+  setName,
+  addNewPoint,
+  isButtonDisabled
+}) {
   return (
     <main className='main-map'>
       <div className='container-map'>
@@ -13,8 +20,16 @@ export function MapAdd({ allHemonucleos }) {
           type='text'
           className='input-search'
           placeholder='Hemonúcleo a ser cadastrado'
+          value={name}
+          onChange={event => setName(event.target.value)}
         />
-        <button className='send-btn'>Enviar</button>
+        <button
+          onClick={() => addNewPoint(name, coords)}
+          disabled={isButtonDisabled}
+          className='send-btn'
+        >
+          Enviar
+        </button>
         <div className='div-map-image'>
           <GoogleMapReact
             bootstrapURLKeys={{
@@ -26,6 +41,7 @@ export function MapAdd({ allHemonucleos }) {
             }}
             defaultZoom={17}
             yesIWantToUseGoogleMapApiInternals
+            onClick={event => setCoords({ lat: event.lat, lng: event.lng })}
           >
             {allHemonucleos.map(hemonucleo => {
               return (
@@ -37,6 +53,13 @@ export function MapAdd({ allHemonucleos }) {
                 />
               )
             })}
+            {coords && (
+              <Pin
+                lat={coords.lat}
+                lng={coords.lng}
+                name={name !== '' ? name : 'Digite um nome'}
+              />
+            )}
           </GoogleMapReact>
         </div>
       </div>

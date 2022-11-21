@@ -4,7 +4,6 @@ import { Pin } from '..'
 import './style.css'
 
 export function MapListAll({ allHemonucleos, selectedData }) {
-  console.log(selectedData)
   return (
     <main className='main-map'>
       <div className='container-map'>
