@@ -9,3 +9,9 @@
     content: url(../../imgs/list-decoration.svg);
     margin-right: .5em;
 }
+
+.list-item:hover {
+    color: #692d38;
+    text-decoration: underline 2.5px;
+    cursor: pointer;
+}
