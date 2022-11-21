@@ -3,7 +3,12 @@ import { Point } from '../models/point.js'
 const addPoint = async (req, res) => {
   try {
     const { name, lat, lng } = req.body
-    //adiiconar validacaoes undefined/null
+
+    if (!name || !lat || !lng) {
+      res.status(400).send('Enter all fields!')
+      return
+    }
+
     const geometry = {
       type: 'Point',
       coordinates: [lat, lng],
