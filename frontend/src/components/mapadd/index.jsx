@@ -2,6 +2,7 @@ import React from 'react'
 import GoogleMapReact from 'google-map-react'
 import arrow from '../../imgs/arrow-icon.png'
 import { Pin } from '..'
+import './style.css'
 
 export function MapAdd({ allHemonucleos }) {
   console.log(allHemonucleos)
@@ -11,8 +12,9 @@ export function MapAdd({ allHemonucleos }) {
         <input
           type='text'
           className='input-search'
-          placeholder='Digite aqui o local'
+          placeholder='Hemonúcleo a ser cadastrado'
         />
+        <button className='send-btn'>Enviar</button>
         <div className='div-map-image'>
           <GoogleMapReact
             bootstrapURLKeys={{

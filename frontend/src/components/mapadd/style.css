@@ -1,0 +1,22 @@
+.send-btn {
+  width: 80px;
+  height: 60px;
+  position: relative;
+  left: 19rem;
+  top: -3.6rem;
+
+  color: #fff;
+  background-color: #e01c40;
+  border-radius: 1rem;
+
+  outline: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: medium;
+  padding-left: 5px;
+
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background-color: #e01c40d5;
+}
