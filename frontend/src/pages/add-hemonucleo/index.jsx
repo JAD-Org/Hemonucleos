@@ -26,6 +26,7 @@ export function AddHemonucleo() {
       setName('')
       setCoords(undefined)
       alert('Adicionado com sucesso!')
+      await getAllHemonucleos()
     } catch {
       alert('Algo deu errado... Tente novamente.')
     }
