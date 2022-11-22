@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import GoogleMapReact from 'google-map-react'
 import arrow from '../../imgs/arrow-icon.png'
 import { Pin } from '..'
@@ -13,16 +13,6 @@ export function MapAdd({
   addNewPoint,
   isButtonDisabled
 }) {
-  const button = useRef(null)
-  const input = useRef(null)
-
-  const handleKeyUp = () => {
-    if (input.current.value) button.current.classList.add('available')
-    else button.current.classList.remove('available')
-  }
-
-  console.log(process.env.REACT_APP_GOOGLE_MAPS_API_KEY)
-
   return (
     <main className='main-map'>
       <div className='container-map'>
@@ -32,14 +22,11 @@ export function MapAdd({
           placeholder='Hemonúcleo a ser cadastrado'
           value={name}
           onChange={event => setName(event.target.value)}
-          ref={input}
-          onKeyUp={handleKeyUp}
         />
         <button
           onClick={() => addNewPoint(name, coords)}
           disabled={isButtonDisabled}
-          className='send-btn'
-          ref={button}
+          className={`send-btn ${isButtonDisabled ? '' : 'available'}`}
         >
           Enviar
         </button>

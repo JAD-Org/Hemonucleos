@@ -34,7 +34,8 @@ export function AddHemonucleo() {
   useEffect(() => {
     getAllHemonucleos()
   }, [])
-
+  console.log(name)
+  console.log(!coords)
   const isButtonDisabled = name === '' || !coords
 
   return (
