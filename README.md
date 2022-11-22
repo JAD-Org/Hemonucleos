@@ -12,16 +12,73 @@ Ter instalado em sua máquina o [Node.js](https://nodejs.org/en/download/), um a
 
 ### Execução
 
+#### BackEnd
+
+- Acesse a pasta do Backend digitando:
+```
+ $ cd backend
+```
+
 - Para instalar as dependências do projeto:
 
 ```
- $ npm install ou yarn install
+ $ npm install ou npm i
 ```
 
 - Para inicializar o servidor:
 
 ```
- $ npm run dev ou yarn run dev
+ $ npm start
 ```
 
-Após esses passos, o usuário deverá acessar, no seu navegador, o link: http://localhost:3000
+A porta aberta em execução no servidor será a porta 8080;
+
+---
+
+#### FrontEnd
+
+- Acesse a pasta do Frontkend digitando:
+```
+ $ cd front
+```
+
+- Para instalar as dependências do projeto:
+
+```
+ $ npm install ou npm i
+```
+
+- Para inicializar o servidor:
+
+```
+ $ npm start
+```
+
+Após esses passos, o usuário deverá acessar, no seu navegador, o link: http://localhost:3000 para ver o projeto em execução
+
+
+### Ferramentas Utilizadas
+
+#### UX/UI
+
+- Figma
+
+#### FrontEnd
+
+- React.js
+
+#### BackEnd
+
+- Express.js
+
+#### Banco de Dados + ORM
+
+- Sequelize
+- PostgreSQL + PostGIS
+- Heroku
+
+### Equipe
+
+- João Alfredo Alves
+- Alysson Aldrin
+- Daniel de Oliveira
