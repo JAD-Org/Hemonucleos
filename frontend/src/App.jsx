@@ -14,7 +14,6 @@ function App() {
   )
 
   useEffect(() => {
-    console.log('entrou')
     syncDatabase()
   }, [])
 
