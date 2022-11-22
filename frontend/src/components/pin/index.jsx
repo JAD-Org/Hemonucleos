@@ -1,8 +1,11 @@
 import React from 'react'
-import { Icon } from '@iconify/react'
-import locationIcon from '@iconify/icons-mdi/map-marker'
 import './style.css'
 
 export function Pin({ name }) {
-  return <Icon icon={locationIcon} className='pin-icon' />
+  return (
+    <div className='tooltip'>
+      <img src='marker.png' alt='Marker' className='pin-icon' />
+      <div className='tooltip-text'>{name}</div>
+    </div>
+  )
 }

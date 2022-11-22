@@ -17,11 +17,11 @@ export function MapAdd({
   const input = useRef(null)
 
   const handleKeyUp = () => {
-    if(input.current.value)
-      button.current.classList.add('available')
-    else
-      button.current.classList.remove('available')
+    if (input.current.value) button.current.classList.add('available')
+    else button.current.classList.remove('available')
   }
+
+  console.log(process.env.REACT_APP_GOOGLE_MAPS_API_KEY)
 
   return (
     <main className='main-map'>
@@ -46,7 +46,7 @@ export function MapAdd({
         <div className='div-map-image'>
           <GoogleMapReact
             bootstrapURLKeys={{
-              key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
+              key: ''
             }}
             defaultCenter={{
               lat: -6.8896525,

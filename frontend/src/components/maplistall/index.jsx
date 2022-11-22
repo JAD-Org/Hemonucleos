@@ -10,7 +10,7 @@ export function MapListAll({ allHemonucleos, selectedData }) {
         <div className='div-map-image'>
           <GoogleMapReact
             bootstrapURLKeys={{
-              key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
+              key: ''
             }}
             defaultCenter={{
               lat: selectedData.lat,

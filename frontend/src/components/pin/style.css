@@ -1,4 +1,31 @@
 .pin-icon {
-  font-size: 4rem;
-  color: #e01c40;
+  width: 16px;
+  heigth: 28px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  min-width: 120px;
+  width: fit-content;
+  background-color: #e6637b;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 999px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+.tooltip-text {
+  display: flex;
+  flex-direction: column;
 }
