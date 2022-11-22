@@ -1,11 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
 import { useRef } from 'react'
-import { List, ListItem } from '../../components/index'
+import { List, ListItem, Loader } from '../../components/index'
 import picture from '../../imgs/list-pic.svg'
 import './style.css'
 
-export function ListMain({ allHemonucleos, setSelectedData }) {
+export function ListMain({ allHemonucleos, setSelectedData, isLoading }) {
   const input = useRef(null)
   const [search, setSearch] = useState('')
 
@@ -17,7 +17,7 @@ export function ListMain({ allHemonucleos, setSelectedData }) {
 
   return (
     <main className='list-main'>
-      <section>
+      {isLoading ? <Loader /> : <section classname='section-list'>
         <form onSubmit={handleSearch}>
           <input
             type='search'
@@ -39,7 +39,7 @@ export function ListMain({ allHemonucleos, setSelectedData }) {
               />
             ))}
         </List>
-      </section>
+      </section>}
       <section className='img-section'>
         <img src={picture} alt='Imagem decorativa' />
       </section>

@@ -1,17 +1,17 @@
 .list-item {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    margin-block: .75em;
+  display: flex;
+  align-items: center;
+  font-size: 11pt;
+  margin-block: 0.75em;
 }
 
 .list-item::before {
-    content: url(../../imgs/list-decoration.svg);
-    margin-right: .5em;
+  content: url(../../imgs/list-decoration.svg);
+  margin-right: 0.5em;
 }
 
 .list-item:hover {
-    color: #692d38;
-    text-decoration: underline 2.5px;
-    cursor: pointer;
+  color: #692d38;
+  text-decoration: underline 2.5px;
+  cursor: pointer;
 }
