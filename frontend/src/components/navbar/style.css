@@ -1,22 +1,22 @@
 .global-nav {
-    font-size: 24px;
-    padding-block: 1em;
-    margin-bottom: 5em;
+  font-size: 24px;
+  padding-block: 1em;
+  margin-bottom: 3em;
 }
 
 .global-nav ul {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .global-nav li {
-    margin-inline: 1.5em;
+  margin-inline: 1.5em;
 }
 
 .global-nav .active {
-    border-bottom: solid 4px #E01C40;
+  border-bottom: solid 4px #e01c40;
 }
 
 .global-nav a:hover {
-    border-bottom: solid 4px #E01C40;
+  border-bottom: solid 4px #e01c40;
 }

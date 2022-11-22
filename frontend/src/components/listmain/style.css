@@ -1,41 +1,42 @@
 .list-main {
-    display: flex;
-    font-size: 24px;
-    background-color: #E6637B;
-    width: fit-content;
-    padding-block: 2em;
-    border-radius: 28px;
-    margin: 0 auto;
-    box-shadow: -11px 2px 4px 0px rgb(224, 28, 64, 25%);
+  display: flex;
+  font-size: 24px;
+  background-color: #e6637b;
+  width: 55vw;
+  padding-block: 2em;
+  border-radius: 28px;
+  margin: 0 auto;
+  box-shadow: -11px 2px 4px 0px rgb(224, 28, 64, 25%);
 }
 
 .list-main section {
-    width: max-content;
-    margin-inline: 1.5em;
+  width: max-content;
+  margin-inline: 1.5em;
+}
+
+.section-list {
+  width: 25vw;
 }
 
 .list-main input {
-    font-size: inherit;
-    width: 100%;
-    padding: 1em;
-    border-radius: 12px;
-    margin-bottom: 1em;
-    background-image: url(../../imgs/search-icon.svg);
-    background-repeat: no-repeat;
-    background-position: 95% center;
-    background-size: 1.5em;
+  font-size: 14pt;
+  width: 21.6vw;
+  padding: 1em;
+  border-radius: 12px;
+  margin-bottom: 1em;
+  background-image: url(../../imgs/search-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-size: 1.5em;
+  outline: none;
+  color: #505050;
 }
 
 .list-main ul {
-    width: 400px;
-    height: calc(100% - 150px);
-}
-
-.list-main .img-section {
-    align-self: center;
+  width: 100%;
+  height: calc(100% - 150px);
 }
 
 .list-main img {
-    width: 500px;
-    height: 500px;
+  width: 25vw;
 }

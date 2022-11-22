@@ -1,35 +1,40 @@
 .home-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
 }
 
 .home-main section {
-    text-align: center;
+  text-align: center;
 }
 
 .home-main h1 {
-    font-size: 96px;
-    margin: 0 1em .5em;
+  font-size: 96px;
+  margin: 0 1em 0.5em;
 }
 
 .home-main p {
-    width: 300px;
-    margin: 0 auto 2.5em;
+  width: 300px;
+  margin: 0 auto 2.5em;
 }
 
 .home-main a {
-    display: block;
-    width: 15em;
-    color: #EDEDED;
-    background-color: #E01C40;
-    padding: .5em 2.5em;
-    border-radius: 15px;
-    margin: 0 auto;
+  display: block;
+  width: 15em;
+  color: #ededed;
+  background-color: #e01c40;
+  padding: 0.5em 2.5em;
+  border-radius: 15px;
+  margin: 0 auto;
+  transition: 0.5s ease-in-out;
+}
+
+.home-main a:hover {
+  background-color: #e01c40d5;
 }
 
 .home-main img {
-    width: 549px;
-    height: 583px;
+  width: 549px;
+  height: 583px;
 }
